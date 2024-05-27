@@ -25,14 +25,14 @@ import com.ghavio.lafyuu.Home
 import com.ghavio.lafyuu.Login
 import com.ghavio.lafyuu.Register
 import com.ghavio.lafyuu.SuperFlashSaleScreen
-import com.ghavio.lafyuu.MobileProgramming_TugasUITheme
+import com.ghavio.lafyuu.LafyuTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            MobileProgramming_TugasUITheme {
+            LafyuTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background

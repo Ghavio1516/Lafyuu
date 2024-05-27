@@ -31,7 +31,7 @@ fun CardCategory(category: DataCategory) {
                 contentDescription = null,
                 modifier = Modifier
                     .size(50.dp)
-                    .border(2.dp, color = Color.Red, shape = RoundedCornerShape(100))
+                    .border(1.dp, color = Color.Blue, shape = RoundedCornerShape(100))
                     .padding(12.dp)
             )
             Spacer(modifier = Modifier.height(8.dp))

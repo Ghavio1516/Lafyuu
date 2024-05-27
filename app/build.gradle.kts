@@ -1,6 +1,6 @@
 plugins {
-    id("com.android.application")
-    id("org.jetbrains.kotlin.android")
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.jetbrains.kotlin.android)
 }
 
 android {
@@ -26,30 +26,23 @@ android {
             )
         }
     }
-
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
-
     kotlinOptions {
         jvmTarget = "1.8"
     }
-
+    buildFeatures {
+        compose = true
+    }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.14" // Ganti dengan versi terbaru yang sesuai
+        kotlinCompilerExtensionVersion = "1.5.1"
     }
 }
 
 dependencies {
-    // Dependensi Jetpack Compose
-    implementation("androidx.compose.ui:ui:1.6.7") // Ganti dengan versi terbaru yang sesuai
-    implementation("androidx.compose.material3:material3:1.2.1") // Ganti dengan versi terbaru yang sesuai
-    implementation("androidx.compose.ui:ui-tooling-preview:1.6.7") // Ganti dengan versi terbaru yang sesuai
-    implementation("androidx.compose.runtime:runtime:1.6.7") // Ganti dengan versi terbaru yang sesuai
-    implementation("androidx.compose.compiler:compiler:1.5.14") // Ganti dengan versi terbaru yang sesuai
 
-    // Dependensi lainnya
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -60,7 +53,6 @@ dependencies {
     implementation(libs.androidx.navigation.runtime.ktx)
     implementation(libs.androidx.ui.tooling.preview.android)
     implementation(libs.androidx.navigation.compose)
-
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

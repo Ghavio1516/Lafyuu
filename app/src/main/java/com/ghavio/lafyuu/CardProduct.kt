@@ -32,7 +32,7 @@ fun CardFlashSale(navController: NavHostController, product: DataProduct) {
     Column(
         modifier = Modifier
             .padding(4.dp)
-            .border(2.dp, color = Color.Red, shape = RoundedCornerShape(10)),
+            .border(0.dp, color = Color.Blue, shape = RoundedCornerShape(10)),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {

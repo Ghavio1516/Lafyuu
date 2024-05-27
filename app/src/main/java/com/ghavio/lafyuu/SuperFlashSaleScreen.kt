@@ -58,7 +58,7 @@ fun SuperFlashSaleScreen(navController: NavHostController) {
                 Icon(Icons.Default.ArrowBack, contentDescription = null)
             }
             Text(
-                text = "Super Flash Sale",
+                text = "Flash Sale",
                 color = Color.Black.copy(),
                 fontSize = 16.sp,
                 fontWeight = FontWeight.Bold
@@ -81,7 +81,7 @@ fun SuperFlashSaleScreen(navController: NavHostController) {
                 verticalArrangement = Arrangement.SpaceBetween
             ) {
                 Text(
-                    text = "Super Flash Sale\n50% off",
+                    text = "Flash Sale\n100% off",
                     color = Color.White,
                     fontSize = 24.sp,
                     fontWeight = FontWeight.Bold

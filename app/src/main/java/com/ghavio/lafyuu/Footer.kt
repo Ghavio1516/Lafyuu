@@ -44,7 +44,7 @@ fun Footer() {
 
     LazyRow(modifier = Modifier
         .fillMaxWidth()
-        .border(2.dp, color = Color.Red, shape = RoundedCornerShape(10)),
+        .border(2.dp, color = Color.Blue, shape = RoundedCornerShape(10)),
         horizontalArrangement = Arrangement.SpaceEvenly) {
         items(icons) { icons ->
             Column(

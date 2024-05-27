@@ -50,7 +50,7 @@ fun Login(navController: NavController) {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Image(
-            painter = painterResource(id = R.drawable.nahiki),
+            painter = painterResource(id = R.drawable.logodlt),
             contentDescription = null
         )
         Spacer(modifier = Modifier.height(16.dp))
@@ -71,7 +71,7 @@ fun Login(navController: NavController) {
         Button(
             onClick = { navController.navigate("home") },
             colors = ButtonDefaults.buttonColors(
-                containerColor = Color.Red
+                containerColor = Color.Blue
             ),
             shape = RoundedCornerShape(25)
         ) {
@@ -83,7 +83,7 @@ fun Login(navController: NavController) {
             Spacer(modifier = Modifier.width(8.dp))
             Text(text = "Sign Up",
                 modifier = Modifier.clickable {navController.navigate("register")},
-                color = Color.Red
+                color = Color.Blue
             )
         }
     }
